@@ -87,8 +87,8 @@ let veryBetterWords = [
   let goodWord;
   let betterWord;
   function search(ele) {
-     // clear results when searching for a new word
-      goodWord = document.getElementById("myInput").value.trim().toLowerCase();
+      goodWord = document.getElementById("myInput").value.toLowerCase();
+      // clear results when searching for a new word
       if (goodWord.length === 0)
       {
       document.getElementById("betterWord").innerText = "";
@@ -102,7 +102,7 @@ let veryBetterWords = [
   }
   function getBetterWord(){
       // Select the input element and get its value 
-      goodWord = document.getElementById("myInput").value.toLowerCase();
+      goodWord = document.getElementById("myInput").value.trim().toLowerCase();
       // Find a better word
       betterWord = veryBetterWords.filter(word => word.good.match(goodWord)).map(word => word.better);
       // Display better word on page
