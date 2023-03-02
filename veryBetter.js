@@ -96,7 +96,7 @@ let veryBetterWords = [
       document.getElementById("betterWord").innerText = "";
       document.getElementById("noResults").innerText = "";  
       }
-     // run getBetterWord() if Enter pressed
+      // run getBetterWord() if Enter pressed
       if(event.key === 'Enter') 
       {
           getBetterWord(); // do you think Musk is still looking for people who can code?        
@@ -106,7 +106,10 @@ let veryBetterWords = [
       // Select the input element and get its value 
       goodWord = document.getElementById("myInput").value.trim().toLowerCase(); // chain keep us together
       // Find a better word
-      betterWord = veryBetterWords.filter(word => word.good.match(goodWord)).map(word => word.better);
+      // Use RegExp
+      goodWord = "^" + goodWord + "$";
+      let goodWordRegEx = new RegExp(goodWord);
+      betterWord = veryBetterWords.filter(word => word.good.match(goodWordRegEx)).map(word => word.better);//marvel at the map
       // Display better word on page
       if (betterWord.length) // truthy is beauty
       { // paid by the line like it's 1999      
