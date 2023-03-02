@@ -1,3 +1,4 @@
+// databases are so... {help me out here, rest of this file...}
 let veryBetterWords = [
     {good: "better", better: "best"},
     {good: "bad", better: "awful"},
@@ -84,12 +85,13 @@ let veryBetterWords = [
     {good: "different", better: "distinct"},
     {good: "correct", better: "accurate"}
   ]
+  // time for some middle school JS, amigos
   let goodWord;
   let betterWord;
   function search(ele) {
-      goodWord = document.getElementById("myInput").value.toLowerCase();
+      goodWord = document.getElementById("myInput").value.toLowerCase(); 
       // clear results when searching for a new word
-      if (goodWord.length === 0)
+      if (!goodWord.length) // gettin' truthy with it
       {
       document.getElementById("betterWord").innerText = "";
       document.getElementById("noResults").innerText = "";  
@@ -97,20 +99,20 @@ let veryBetterWords = [
      // run getBetterWord() if Enter pressed
       if(event.key === 'Enter') 
       {
-          getBetterWord();        
+          getBetterWord(); // do you think Musk is still looking for people who can code?        
       }
   }
   function getBetterWord(){
       // Select the input element and get its value 
-      goodWord = document.getElementById("myInput").value.trim().toLowerCase();
+      goodWord = document.getElementById("myInput").value.trim().toLowerCase(); // chain keep us together
       // Find a better word
       betterWord = veryBetterWords.filter(word => word.good.match(goodWord)).map(word => word.better);
       // Display better word on page
-      if (betterWord.length) // truthy beauty
-      {      
+      if (betterWord.length) // truthy is beauty
+      { // paid by the line like it's 1999      
       document.getElementById("betterWord").innerText = betterWord;
       document.getElementById("noResults").innerText = "";  
-        }
+      }
       else
       {
       document.getElementById("betterWord").innerText = "";  
