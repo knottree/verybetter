@@ -70,13 +70,25 @@ let veryBetterWords = [
     {good: "talented", better: "gifted"},
     {good: "tasty", better: "delicious"},
     {good: "lovely", better: "adorable"},
-    {good: "fast", better: "swift"}
+    {good: "fast", better: "swift"},
+    {good: "pretty", better: "dazzling"},
+    {good: "fat", better: "portly"},
+    {good: "thin", better: "emaciated"},
+    {good: "new", better: "pristine"},
+    {good: "first", better: "foremost"},
+    {good: "last", better: "final"},
+    {good: "high", better: "stratospheric"},
+    {good: "early", better: "prompt"},
+    {good: "young", better: "juvenile"},
+    {good: "important", better: "crucial"},
+    {good: "different", better: "distinct"},
+    {good: "correct", better: "accurate"}
   ]
   let goodWord;
   let betterWord;
   function search(ele) {
      // clear results when searching for a new word
-      goodWord = document.getElementById("myInput").value.toLowerCase();
+      goodWord = document.getElementById("myInput").value.trim().toLowerCase();
       if (goodWord.length === 0)
       {
       document.getElementById("betterWord").innerText = "";
@@ -102,6 +114,6 @@ let veryBetterWords = [
       else
       {
       document.getElementById("betterWord").innerText = "";  
-      document.getElementById("noResults").innerText = "No results. Try a different word.";
+      document.getElementById("noResults").innerText = "No results. Try something else.";
       }
     }
