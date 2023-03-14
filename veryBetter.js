@@ -84,7 +84,9 @@ let veryBetterWords = [
     {good: "young", better: "juvenile"},
     {good: "important", better: "crucial"},
     {good: "different", better: "distinct"},
-    {good: "correct", better: "accurate"}
+    {good: "correct", better: "accurate"},
+    {good: "thirsty", better: "parched"},
+    {good: "hungry", better: "famished"}
   ]
   // time for some middle school JS, amigos
   let goodWord;
