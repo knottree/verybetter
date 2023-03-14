@@ -3,6 +3,7 @@ let veryBetterWords = [
     {good: "better", better: "best"},
     {good: "bad", better: "awful"},
     {good: "smart", better: "intelligent"},
+    {good: "smart", better: "brilliant"},
     {good: "sad", better: "sorrowful"},
     {good: "upset", better: "distraught"},
     {good: "cold", better: "freezing"},
@@ -112,7 +113,11 @@ let veryBetterWords = [
       betterWord = veryBetterWords.filter(word => word.good.match(goodWordRegEx)).map(word => word.better);//marvel at the map
       // Display better word on page
       if (betterWord.length) // truthy is beauty
-      { // paid by the line like it's 1999      
+      { // paid by the line like it's 1999
+        if (betterWord.length > 1) // if there is more than one better word, pick one at random
+        {
+            betterWord = betterWord[Math.floor(Math.random()*betterWord.length)];
+        }      
       document.getElementById("betterWord").innerText = betterWord;
       document.getElementById("noResults").innerText = "";  
       }
