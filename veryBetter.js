@@ -1,4 +1,4 @@
-// databases are so... {help me out here, rest of this file...}
+// databases are very... {help me out here, rest of this file...}
 let veryBetterWords = [
     {good: "better", better: "best"},
     {good: "bad", better: "awful"},
@@ -86,7 +86,8 @@ let veryBetterWords = [
     {good: "different", better: "distinct"},
     {good: "correct", better: "accurate"},
     {good: "thirsty", better: "parched"},
-    {good: "hungry", better: "famished"}
+    {good: "hungry", better: "famished"},
+    {good: "kind", better: "benevolent "}
   ]
   // time for some middle school JS, amigos
   let goodWord;
