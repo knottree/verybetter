@@ -1,6 +1,5 @@
 // databases are very... {help me out here, rest of this file...}
 import veryBetterWords from './betterWords.js';
-console.log(veryBetterWords)
 // time for some middle school JS, amigos
   let goodWord;
   let betterWord;
