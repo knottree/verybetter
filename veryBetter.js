@@ -4,6 +4,8 @@ console.log(veryBetterWords)
 // time for some middle school JS, amigos
   let goodWord;
   let betterWord;
+  const textInput = document.getElementById('myInput');
+  const button = document.getElementById('getBetterButton');
   function search(ele) {
       goodWord = document.getElementById("myInput").value.toLowerCase(); 
       // clear results when searching for a new word
@@ -42,3 +44,5 @@ console.log(veryBetterWords)
       document.getElementById("noResults").innerText = "No results. Try something else.";
       }
     }
+    textInput.addEventListener('input', search)
+    button.addEventListener('click',getBetterWord)
