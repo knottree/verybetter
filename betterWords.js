@@ -1,4 +1,4 @@
-export default veryBetterWords = [
+const veryBetterWords = [
     {good: "better", better: "best"},
     {good: "bad", better: "awful"},
     {good: "smart", better: "intelligent"},
@@ -88,3 +88,5 @@ export default veryBetterWords = [
     {good: "hungry", better: "famished"},
     {good: "kind", better: "benevolent "}
   ]
+
+  export {veryBetterWords};
