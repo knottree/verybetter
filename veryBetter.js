@@ -44,5 +44,5 @@ console.log(veryBetterWords)
       document.getElementById("noResults").innerText = "No results. Try something else.";
       }
     }
-    textInput.addEventListener('input', search)
+    textInput.addEventListener('keydown', search)
     button.addEventListener('click',getBetterWord)
