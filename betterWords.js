@@ -1,4 +1,4 @@
-let veryBetterWords = [
+export default veryBetterWords = [
     {good: "better", better: "best"},
     {good: "bad", better: "awful"},
     {good: "smart", better: "intelligent"},
@@ -88,4 +88,3 @@ let veryBetterWords = [
     {good: "hungry", better: "famished"},
     {good: "kind", better: "benevolent "}
   ]
-  export { veryBetterWords };
