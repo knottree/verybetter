@@ -89,4 +89,4 @@ const veryBetterWords = [
     {good: "kind", better: "benevolent "}
   ]
 
-  export {veryBetterWords};
+  export default veryBetterWords;
