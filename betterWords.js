@@ -86,7 +86,9 @@ const veryBetterWords = [
     {good: "correct", better: "accurate"},
     {good: "thirsty", better: "parched"},
     {good: "hungry", better: "famished"},
-    {good: "kind", better: "benevolent "}
+    {good: "kind", better: "benevolent "},
+    {good: "tired", better: "exhausted "},
+    {good: "awake", better: "alert "}
   ]
 
   export default veryBetterWords;
